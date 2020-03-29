@@ -35,7 +35,7 @@ class Mediator:
 
 class ConcreteMediator(Mediator):
 	def __init__(self):
-		Mediator.__init__(self)
+		super().__init__()
 		self._colleague = []
 
 	def add(self, colleague):
